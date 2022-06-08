@@ -1,8 +1,8 @@
-﻿using DotNet.WebApi.Extensions.Responses;
+﻿using ArchitectProg.WebApi.Extensions.Responses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace DotNet.WebApi.Extensions.Filters.Base;
+namespace ArchitectProg.WebApi.Extensions.Filters.Base;
 
 public class HttpStatusCodeOnExceptionFilter : IExceptionFilter
 {

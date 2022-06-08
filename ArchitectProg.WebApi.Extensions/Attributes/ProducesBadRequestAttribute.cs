@@ -1,8 +1,8 @@
-﻿using DotNet.WebApi.Extensions.Responses;
+﻿using ArchitectProg.WebApi.Extensions.Responses;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNet.WebApi.Extensions.Attributes;
+namespace ArchitectProg.WebApi.Extensions.Attributes;
 
 public class ProducesBadRequestAttribute : ProducesResponseTypeAttribute
 {

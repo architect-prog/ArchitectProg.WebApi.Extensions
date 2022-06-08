@@ -1,7 +1,7 @@
-﻿using DotNet.WebApi.Extensions.Filters.Base;
+﻿using ArchitectProg.WebApi.Extensions.Filters.Base;
 using Microsoft.AspNetCore.Http;
 
-namespace DotNet.WebApi.Extensions.Filters;
+namespace ArchitectProg.WebApi.Extensions.Filters;
 
 public class BadRequestOnExceptionFilter : HttpStatusCodeOnExceptionFilter
 {

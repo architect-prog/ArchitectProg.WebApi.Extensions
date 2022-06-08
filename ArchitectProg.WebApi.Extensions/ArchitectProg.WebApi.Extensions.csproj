@@ -5,10 +5,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/architect-prog/DotNet.WebApi.Extensions</RepositoryUrl>
+    <RepositoryUrl>https://github.com/architect-prog/ArchitectProg.WebApi.Extensions</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <Description>Simple solution which allow to add exception handling filters for web api application and attributes for controller documentation.</Description>
   </PropertyGroup>
 
   <ItemGroup>

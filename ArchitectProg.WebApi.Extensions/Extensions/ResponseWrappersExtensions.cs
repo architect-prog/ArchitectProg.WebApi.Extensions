@@ -1,6 +1,6 @@
-﻿using DotNet.WebApi.Extensions.Responses;
+﻿using ArchitectProg.WebApi.Extensions.Responses;
 
-namespace DotNet.WebApi.Extensions.Extensions;
+namespace ArchitectProg.WebApi.Extensions.Extensions;
 
 public static class ResponseWrappersExtensions
 {

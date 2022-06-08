@@ -1,4 +1,4 @@
-﻿namespace DotNet.WebApi.Extensions.Responses;
+﻿namespace ArchitectProg.WebApi.Extensions.Responses;
 
 public class ErrorResult
 {
