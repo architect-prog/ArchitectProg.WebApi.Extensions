@@ -15,7 +15,7 @@ public class HttpStatusCodeOnExceptionFilter : IExceptionFilter
         this.exceptionTypes = exceptionTypes;
     }
 
-    public void OnException(ExceptionContext context)
+    public virtual void OnException(ExceptionContext context)
     {
         var exception = context.Exception;
 
