@@ -4,16 +4,10 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace ArchitectProg.WebApi.Extensions.Filters.Base;
 
-public class HttpStatusCodeOnExceptionFilter : IExceptionFilter
+public class HttpStatusCodeOnExceptionFilter(int statusCode, params Type[] exceptionTypes) : IExceptionFilter
 {
-    private readonly int statusCode;
-    private readonly Type[] exceptionTypes;
-
-    public HttpStatusCodeOnExceptionFilter(int statusCode, params Type[] exceptionTypes)
-    {
-        this.statusCode = statusCode;
-        this.exceptionTypes = exceptionTypes;
-    }
+    private readonly int statusCode = statusCode;
+    private readonly Type[] exceptionTypes = exceptionTypes;
 
     public virtual void OnException(ExceptionContext context)
     {

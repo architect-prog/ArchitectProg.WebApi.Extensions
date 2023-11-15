@@ -1,13 +1,7 @@
 ﻿namespace ArchitectProg.WebApi.Extensions.Responses;
 
-public class ErrorResult
+public class ErrorResult(int statusCode, string? error)
 {
-    public int StatusCode { get; }
-    public string? Error { get; }
-
-    public ErrorResult(int statusCode, string? error)
-    {
-        Error = error;
-        StatusCode = statusCode;
-    }
+    public int StatusCode { get; } = statusCode;
+    public string? Error { get; } = error;
 }
