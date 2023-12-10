@@ -4,10 +4,5 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ArchitectProg.WebApi.Extensions.Attributes;
 
-public class ProducesNotFoundAttribute : ProducesResponseTypeAttribute
-{
-    public ProducesNotFoundAttribute()
-        : base(typeof(ErrorResult), StatusCodes.Status404NotFound)
-    {
-    }
-}
+public class ProducesNotFoundAttribute()
+    : ProducesResponseTypeAttribute(typeof(ErrorResult), StatusCodes.Status404NotFound);

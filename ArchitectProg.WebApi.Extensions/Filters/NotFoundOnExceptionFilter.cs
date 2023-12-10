@@ -3,10 +3,5 @@ using Microsoft.AspNetCore.Http;
 
 namespace ArchitectProg.WebApi.Extensions.Filters;
 
-public class NotFoundOnExceptionFilter : HttpStatusCodeOnExceptionFilter
-{
-    public NotFoundOnExceptionFilter(params Type[] exceptionTypes)
-        : base(StatusCodes.Status404NotFound, exceptionTypes)
-    {
-    }
-}
+public class NotFoundOnExceptionFilter(params Type[] exceptionTypes)
+    : HttpStatusCodeOnExceptionFilter(StatusCodes.Status404NotFound, exceptionTypes);

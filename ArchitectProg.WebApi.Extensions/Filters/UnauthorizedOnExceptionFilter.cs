@@ -3,10 +3,5 @@ using Microsoft.AspNetCore.Http;
 
 namespace ArchitectProg.WebApi.Extensions.Filters;
 
-public class UnauthorizedOnExceptionFilter : HttpStatusCodeOnExceptionFilter
-{
-    public UnauthorizedOnExceptionFilter(params Type[] exceptionTypes)
-        : base(StatusCodes.Status401Unauthorized, exceptionTypes)
-    {
-    }
-}
+public class UnauthorizedOnExceptionFilter(params Type[] exceptionTypes)
+    : HttpStatusCodeOnExceptionFilter(StatusCodes.Status401Unauthorized, exceptionTypes);

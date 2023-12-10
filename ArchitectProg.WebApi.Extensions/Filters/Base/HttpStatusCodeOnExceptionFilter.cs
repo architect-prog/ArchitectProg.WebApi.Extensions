@@ -6,9 +6,6 @@ namespace ArchitectProg.WebApi.Extensions.Filters.Base;
 
 public class HttpStatusCodeOnExceptionFilter(int statusCode, params Type[] exceptionTypes) : IExceptionFilter
 {
-    private readonly int statusCode = statusCode;
-    private readonly Type[] exceptionTypes = exceptionTypes;
-
     public virtual void OnException(ExceptionContext context)
     {
         var exception = context.Exception;

@@ -3,10 +3,5 @@ using Microsoft.AspNetCore.Http;
 
 namespace ArchitectProg.WebApi.Extensions.Filters;
 
-public class BadRequestOnExceptionFilter : HttpStatusCodeOnExceptionFilter
-{
-    public BadRequestOnExceptionFilter(params Type[] exceptionTypes)
-        : base(StatusCodes.Status400BadRequest, exceptionTypes)
-    {
-    }
-}
+public class BadRequestOnExceptionFilter(params Type[] exceptionTypes)
+    : HttpStatusCodeOnExceptionFilter(StatusCodes.Status400BadRequest, exceptionTypes);
